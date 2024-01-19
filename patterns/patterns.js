@@ -63,4 +63,18 @@ function pattern6(n) {
   console.log(str);
 }
 
-pattern6(6);
+function pattern7(n) {
+  let str = "";
+  for (let i = 0; i < n; i++) {
+    for (let j = 1; j <= n - i; j++) {
+      str += " ";
+    }
+    for (let j = 1; j <= 2 * i + 1; j++) {
+      str += "*";
+    }
+    str += "\n";
+  }
+  console.log(str);
+}
+
+pattern7(5);
