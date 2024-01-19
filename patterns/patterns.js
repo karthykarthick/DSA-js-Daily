@@ -54,7 +54,7 @@ function pattern5(n) {
 
 function pattern6(n) {
   let str = "";
-  for (let i = 1; i <= n; i++) {
+  for (let i = 1; i < n; i++) {
     for (let j = 1; j <= n - i; j++) {
       str += j;
     }
@@ -63,4 +63,4 @@ function pattern6(n) {
   console.log(str);
 }
 
-pattern7(5);
+pattern6(6);
